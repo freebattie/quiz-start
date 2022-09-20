@@ -2,7 +2,6 @@
   "name": "quiz-start",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently npm:dev:client npm:dev:server",
