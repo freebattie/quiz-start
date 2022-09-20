@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write *.{jsx,js,tsx,ts,html}",
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "npm install --include=dev && npm run build:parcel",
+    "build:parcel": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
