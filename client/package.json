@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel watch index.html"
+    "dev": "parcel index.html"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "babel-jest": "^29.0.3",
     "jest": "^29.0.3",
     "parcel": "^2.7.0",
+    "process": "^0.11.10",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
