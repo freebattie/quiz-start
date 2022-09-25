@@ -17,7 +17,7 @@ const quizzes = [
   {
     question: "What is not a city in Norway",
     answers: ["Oslo", "Stavanger", "Gøteborg", "Kristiansand"],
-    correct: 3,
+    correct: 2,
   },
   {
     question: "What is country dose not share a land border with norway?",
