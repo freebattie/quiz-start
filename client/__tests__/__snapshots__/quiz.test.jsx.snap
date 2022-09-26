@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quiz page should show QuizPage 1`] = `
+<div>
+  <div>
+    <h1>
+      What is the capital of Norway?
+    </h1>
+    <div>
+      Oslo
+    </div>
+    <div>
+      Stavanger
+    </div>
+    <div>
+      Bergen
+    </div>
+    <div>
+      Kristiansand
+    </div>
+  </div>
+  <div>
+    <h1>
+      What is the capital of Sweden?
+    </h1>
+    <div>
+      Oslo
+    </div>
+    <div>
+      Stockholm
+    </div>
+    <div>
+      Bergen
+    </div>
+    <div>
+      Kristiansand
+    </div>
+  </div>
+  <div>
+    <h1>
+      What is the largest city in Norway
+    </h1>
+    <div>
+      Ålesund
+    </div>
+    <div>
+      Stavanger
+    </div>
+    <div>
+      Oslo
+    </div>
+    <div>
+      Kristiansand
+    </div>
+  </div>
+  <div>
+    <h1>
+      What is not a city in Norway
+    </h1>
+    <div>
+      Oslo
+    </div>
+    <div>
+      Stavanger
+    </div>
+    <div>
+      Gøteborg
+    </div>
+    <div>
+      Kristiansand
+    </div>
+  </div>
+  <div>
+    <h1>
+      What is country dose not share a land border with norway?
+    </h1>
+    <div>
+      Russia
+    </div>
+    <div>
+      Sweden
+    </div>
+    <div>
+      Finland
+    </div>
+    <div>
+      Denmark
+    </div>
+  </div>
+</div>
+`;
