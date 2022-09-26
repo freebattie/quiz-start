@@ -27,12 +27,12 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    - run: cd client && npm test
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: /home/runner/work/quiz-start/client/coverage/lcov.info
+        path-to-lcov: /home/runner/work/quiz-start/quiz-start/client/coverage/lcov.info
         parallel: true
 
   finish:
@@ -43,5 +43,5 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: /home/runner/work/quiz-start/client/coverage/lcov.info
+          path-to-lcov: /home/runner/work/quiz-start/quiz-start/client/coverage/lcov.info
           parallel-finished: true
