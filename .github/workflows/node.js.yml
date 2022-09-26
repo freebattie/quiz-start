@@ -33,4 +33,4 @@ jobs:
       uses: coverallsapp/github-action@1.1.3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: client/coverage/lcov.info
+        path-to-lcov: ${{ github.workspace }}/client/coverage/lcov.info
