@@ -2,17 +2,15 @@ import {
   addQuiz,
   GetAllQuestions,
   isCorrectAnswer,
-  questions,
-} from "./questions.jsx";
+  getRandomQuestion,
+} from "./question.jsx";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 function ShowError() {
   return <GetAllQuestions />;
 }
-function ShowAllQuestions() {
-  return <div>test</div>;
-}
+export const QuestionContext = createContext({ getRandomQuestion });
 export function ShowQuiz({ onAddScore, onAddTotal }) {
   const wrong = "/quiz/answer/wrong";
   const correct = "/quiz/answer/correct";
@@ -26,12 +24,12 @@ export function ShowQuiz({ onAddScore, onAddTotal }) {
     }
   }
 
-  let currentQ;
-  currentQ = questions();
+  const { getRandomQuestion } = useContext(QuestionContext);
+  const [rndQ] = useState(getRandomQuestion());
   const navigate = useNavigate();
-  const [index, setIndex] = useState(currentQ.index);
-  const [question, setQuestion] = useState(currentQ.question);
-  const [answers, setAnswers] = useState(currentQ.answers);
+  const [index, setIndex] = useState(rndQ.index);
+  const [question, setQuestion] = useState(rndQ.question);
+  const [answers, setAnswers] = useState(rndQ.answers);
 
   return (
     <div>

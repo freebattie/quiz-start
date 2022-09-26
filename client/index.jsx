@@ -10,10 +10,10 @@ import {
 import { useEffect, useState } from "react";
 import {
   isCorrectAnswer,
-  questions,
+  getRandomQuestion,
   addQuiz,
   GetAllQuestions,
-} from "./questions";
+} from "./question.jsx";
 import { QuzApp } from "./quiz.jsx";
 import { StartPage } from "./start.jsx";
 

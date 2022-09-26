@@ -50,7 +50,7 @@ export function GetAllQuestions(event) {
     return <QuestionCard key={key} quiz={quiz} />;
   });
 }
-export function questions() {
+export function getRandomQuestion() {
   const newQ = Math.trunc(Math.random() * quizzes.length);
 
   return {
