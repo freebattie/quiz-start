@@ -11,7 +11,7 @@ function ShowError() {
   return <GetAllQuestions />;
 }
 function ShowAllQuestions() {
-  return <div></div>;
+  return <div>test</div>;
 }
 export function ShowQuiz({ onAddScore, onAddTotal }) {
   const wrong = "/quiz/answer/wrong";
