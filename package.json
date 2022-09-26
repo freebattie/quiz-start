@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "cd client && npm run test",
+    "coveralls": "coveralls < coverage/lcov.info --verbose",
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
