@@ -26,14 +26,10 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
-      working-directory: ./client
-    - run: npm run build --if-present
-      working-directory: ./client
     - run: npm run test
       working-directory: ./client
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
+    - name: Collect coverage from client
+      uses: ArtiomTr/jest-coverage-report-action@v2
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: client/coverage/lcov.info
+          working-directory: client
 
