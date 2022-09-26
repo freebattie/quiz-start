@@ -34,23 +34,22 @@
     "react-router-dom": "^6.4.0"
   },
   "babel": {
-    "presets": [
+  "presets": [
+    "@babel/preset-env",
+    [
       "@babel/preset-react",
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
+      {
+        "runtime": "automatic"
+      }
     ]
-  },
+  ]
+},
   "jest": {
     "testEnvironment": "jsdom",
     "collectCoverageFrom": [
       "**/*.jsx",
       "**/*.js",
+      "!dist/**",
       "!coverage/**"
     ]
   }
