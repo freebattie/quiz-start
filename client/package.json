@@ -42,7 +42,7 @@
   "testEnvironment": "jsdom",
   "collectCoverageFrom": [
     "*.jsx",
-    "*.html"
+    "*.tsx"
   ]
 }
 }
