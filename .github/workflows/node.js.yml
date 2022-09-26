@@ -34,6 +34,8 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: /home/runner/work/quiz-start/quiz-start/client/coverage/lcov.info
         parallel: true
+      env:
+        NODE_COVERALLS_DEBUG: 1
 
   finish:
     needs: build
