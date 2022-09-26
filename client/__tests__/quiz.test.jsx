@@ -58,7 +58,7 @@ describe("quiz page", function () {
     act(() => {
       const root = createRoot(element);
       root.render(
-        <MemoryRouter initialEntries={["/quiz/new"]}>
+        <MemoryRouter initialEntries={["/"]}>
           <QuestionContext.Provider
             value={{ getRandomQuestion: () => question }}
           >
