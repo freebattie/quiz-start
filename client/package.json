@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "jest --collectCoverage",
+    "test": "jest --collectCoverage ",
     "format": "prettier --write *.{jsx,js,tsx,ts,html}",
     "dev": "parcel index.html",
     "build": "npm install --include=dev && npm run build:parcel",
