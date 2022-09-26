@@ -51,7 +51,6 @@
     "collectCoverageFrom": [
       "**/*.jsx",
       "**/*.js",
-      "!dist/**",
       "!coverage/**"
     ]
   }
