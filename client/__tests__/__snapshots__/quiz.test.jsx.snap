@@ -107,9 +107,3 @@ exports[`quiz page should show question 1`] = `
   <div>what is the meaning of life</div><button>12</button><button>42</button><button>13</button><button>24</button>
 </div>"
 `;
-
-exports[`quiz page should show something 1`] = `
-"<div>
-  <div>what is the meaning of life</div><button>12</button><button>41</button><button>13</button><button>24</button>
-</div>"
-`;
