@@ -34,6 +34,22 @@ export function isCorrectAnswer(index, answer) {
   return quizzes[index].answers.indexOf(answer) === quizzes[index].correct;
 }
 
+function QuestionCard({ quiz }) {
+  return (
+    <div>
+      <h1>{quiz.question}</h1>
+      {quiz.answers.map((a, key) => (
+        <div key={key}>{a}</div>
+      ))}
+    </div>
+  );
+}
+
+export function GetAllQuestions(event) {
+  return quizzes.map((quiz, key) => {
+    return <QuestionCard key={key} quiz={quiz} />;
+  });
+}
 export function questions() {
   const newQ = Math.trunc(Math.random() * quizzes.length);
 
