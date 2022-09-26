@@ -36,7 +36,8 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: client/coverage/lcov.info
+        path-to-lcov: ./client/coverage/lcov.info
+      env:
         COVERALLS_REPO_TOKEN: "${{ secrets.COVERALLS_TOKEN }}"
         COVERALLS_GIT_BRANCH: "master"
         COVERALLS_SERVICE_NUMBER: $GITHUB_RUN_NUMBER
