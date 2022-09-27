@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "cd client && npm run test",
-    "coveralls": "jset --coverage && coveralls < ./client/coverage/lcov.info",
+    "coveralls": "jest --coverage && coveralls < ./client/coverage/lcov.info",
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
