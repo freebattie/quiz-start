@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "cd client && npm run test",
+    "coveralls": "jest --coverage && coveralls < ./client/coverage/lcov.info",
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
@@ -17,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^7.4.0",
+    "coveralls": "^3.1.1",
     "husky": "^8.0.1",
     "prettier": "^2.7.1"
   },
