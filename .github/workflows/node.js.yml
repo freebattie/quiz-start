@@ -33,11 +33,6 @@ jobs:
       with:
         working-directory: client
     - name: Coveralls
-      run: npm run coveralls
-      env:
-        COVERALLS_REPO_TOKEN: "${{ secrets.COVERALLS_TOKEN }}"
-        COVERALLS_GIT_BRANCH: "main"
-        COVERALLS_PARALLEL: true
-    - name: Coveralls Finish Parallel
-      run: curl -k https://coveralls.io/webhook?repo_token=${{ secrets.COVERALLS_TOKEN }} -d "payload[build_num]=${{ github.sha }}&payload[status]=done"
-
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
